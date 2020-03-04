@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>attribute</title>
+</head>
+<body>
+	<img src="images/kk.jpeg" alt="Good morning" width="284" height="213"><br>
+	<button>set the width attribute of the image</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("img").attr("width","500");
+		});
+	});
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>select</title>
+</head>
+<body>
+	<select id="se" name="actors">
+		<option>Kanna</option>
+		<option selected="selected">Thalapathy</option>
+		<option>Munna</option>
+		<option>chinna</option>
+		<option>Udith</option>
+		<option>Suresh</option>
+	</select>
+	<div id="loc"></div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $("select").change(function(){
+  	document.getElementById("loc").innerHTML="you selected:"+document.getElementById("se").value;
+  });
+  </script>
+</html>

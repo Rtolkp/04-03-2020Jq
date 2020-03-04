@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>remo class</title>
+	<style>
+		.change{
+			color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<p class="change">this method removes css class to an element</p>
+	<input type="button" id="btn" value="clickme">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("p").removeClass("change");
+  });
+});
+</script>
+</html>
